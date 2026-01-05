@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Nachrichten über Trump entfernen
 // @namespace    http://tampermonkey.net/
-// @version      2025-12-28
+// @version      2026-01-05
 // @description
 // @author       Andreas Preikschat
 // @match        https://www.tagesschau.de/*
@@ -9,7 +9,7 @@
 // ==/UserScript==
 
 
-const regex = /\btrump?s\b/i; // "Trump", "Trumps", "trump" or "trumps"
+const regex = /\btrumps?\b/i; // "Trump", "Trumps", "trump" or "trumps"
 
 
 function removeTrump(childClass, parentClass) {
